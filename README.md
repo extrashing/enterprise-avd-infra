@@ -1,9 +1,10 @@
-# Enterprise Azure Virtual Desktop Infrastructure (AVD)
+# Enterprise Azure Virtual Desktop (AVD) Environment
 
-This project deploys a full enterprise-grade AVD environment using Terraform, including:
-- Hybrid Join
-- FSLogix
-- RBAC
-- Modular IaC and GitHub Actions CI
+This project automates the deployment of a full AVD environment using Terraform. Includes:
 
-📦 Modules: Network, AVD, Identity, Storage, RBAC
+- AVD Host Pool (pooled model)
+- Hybrid AD Join setup
+- FSLogix Profile Storage
+- RBAC assignments
+- Modular Infrastructure-as-Code
+
