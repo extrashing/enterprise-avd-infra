@@ -36,3 +36,32 @@ This project automates a complete enterprise-ready Azure Virtual Desktop (AVD) e
 terraform init
 terraform plan
 terraform apply
+
+
+
+⚙️ Prerequisites
+Azure Subscription (with Contributor rights)
+
+Azure CLI installed and authenticated
+
+Terraform 1.5+ installed
+
+(Optional) Azure AD Domain Services or On-Prem Hybrid AD
+
+🧪 Testing & Validation (What Happens After Apply)
+Once deployed, this configuration will:
+
+Provision a VNet with subnets for session hosts, domain join, and management
+
+Join Windows 11 multi-session hosts to your Active Directory
+
+Deploy a Pooled AVD Host Pool with a Desktop App Group
+
+Set up FSLogix user profile redirection to Azure Files
+
+Assign RBAC roles:
+
+Contributor to IT Admin
+
+Desktop Virtualization User to regular users
+
